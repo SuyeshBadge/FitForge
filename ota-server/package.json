@@ -1,0 +1,14 @@
+{
+  "name": "fitforge-ota-server",
+  "version": "1.0.0",
+  "description": "Self-hosted Expo Updates protocol server for FitForge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "publish": "node publish.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "crypto": "^1.0.1"
+  }
+}

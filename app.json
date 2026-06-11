@@ -7,6 +7,12 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "scheme": "fitforge",
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://fitforge-api.stackupai.in/manifest",
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 300
+    },
     "splash": {
       "backgroundColor": "#0a0a0a"
     },
