@@ -1,25 +1,49 @@
 {
   "expo": {
-    "name": "fitforge",
+    "name": "FitForge",
     "slug": "fitforge",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "scheme": "fitforge",
+    "splash": {
+      "backgroundColor": "#0a0a0a"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.suyeshbadge.fitforge",
+      "infoPlist": {
+        "NSCameraUsageDescription": "FitForge needs camera access for progress photos",
+        "NSPhotoLibraryUsageDescription": "FitForge needs photo library access for progress photos"
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0a0a0a",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "package": "com.suyeshbadge.fitforge"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-notifications",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "FitForge needs camera access for progress photos"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "FitForge needs photo library access for progress photos"
+        }
+      ]
+    ]
   }
 }
