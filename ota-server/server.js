@@ -4,7 +4,7 @@ const path = require('path');
 const crypto = require('crypto');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 const UPDATES_DIR = path.join(__dirname, 'updates');
 const CHANNEL = process.env.UPDATE_CHANNEL || 'production';
 
