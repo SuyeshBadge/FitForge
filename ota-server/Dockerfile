@@ -5,5 +5,5 @@ RUN npm install --omit=dev
 COPY server.js .
 COPY publish.js .
 RUN mkdir -p /app/updates
-EXPOSE 3000
+EXPOSE 3456
 CMD ["node", "server.js"]
